@@ -1,0 +1,78 @@
+experimental_monorepo_root = true
+
+[tools]
+node = "latest"
+pnpm = "latest"
+
+[hooks]
+postinstall = "pnpm install"
+
+[env]
+_.path = ["{{config_root}}/node_modules/.bin"]
+
+[tasks.fmt]
+run = "prettier --write ."
+
+[tasks."dev:plugin"]
+depends = "//packages/vite-plugin-component-lib:dev"
+
+[tasks."dev:lit"]
+depends = "//fixtures/lit:dev"
+
+[tasks."dev:preact"]
+depends = "//fixtures/preact:dev"
+
+[tasks."dev:qwik"]
+depends = "//fixtures/qwik:dev"
+
+[tasks."dev:react"]
+depends = "//fixtures/react:dev"
+
+[tasks."dev:react-compiler"]
+depends = "//fixtures/react-compiler:dev"
+
+[tasks."dev:solid"]
+depends = "//fixtures/solid:dev"
+
+[tasks."dev:svelte"]
+depends = "//fixtures/svelte:dev"
+
+[tasks."dev:vue"]
+depends = "//fixtures/vue:dev"
+
+# ===
+
+[tasks."build:plugin"]
+depends = "//packages/vite-plugin-component-lib:build"
+
+[tasks."build:lit"]
+depends = ":build:plugin"
+run = "mise //fixtures/lit:build"
+
+[tasks."build:preact"]
+depends = ":build:plugin"
+run = "mise //fixtures/preact:build"
+
+[tasks."build:qwik"]
+depends = ":build:plugin"
+run = "mise //fixtures/qwik:build"
+
+[tasks."build:react"]
+depends = ":build:plugin"
+run = "mise //fixtures/react:build"
+
+[tasks."build:react-compiler"]
+depends = ":build:plugin"
+run = "mise //fixtures/react-compiler:build"
+
+[tasks."build:solid"]
+depends = ":build:plugin"
+run = "mise //fixtures/solid:build"
+
+[tasks."build:svelte"]
+depends = ":build:plugin"
+run = "mise //fixtures/svelte:build"
+
+[tasks."build:vue"]
+depends = ":build:plugin"
+run = "mise //fixtures/vue:build"

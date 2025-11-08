@@ -1,0 +1,26 @@
+{
+    "name": "@fixtures/qwik",
+    "version": "0.0.0",
+    "type": "module",
+    "private": true,
+    "main": "./dist/esm/index.qwik.mjs",
+    "qwik": "./dist/esm/index.qwik.mjs",
+    "exports": {
+        ".": {
+            "import": "./dist/esm/index.qwik.mjs",
+            "require": "./dist/cjs/index.qwik.cjs"
+        }
+    },
+    "files": ["dist"],
+    "scripts": {
+        "build": "vite build --mode lib"
+    },
+    "peerDependencies": {
+        "@builder.io/qwik": "catalog:plugins"
+    },
+    "devDependencies": {
+        "@builder.io/qwik": "catalog:plugins",
+        "vite": "catalog:tools",
+        "vite-plugin-component-lib": "workspace:*"
+    }
+}

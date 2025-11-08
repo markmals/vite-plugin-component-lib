@@ -1,0 +1,13 @@
+{
+    "name": "vite-plugin-component-lib-monorepo",
+    "version": "0.0.0",
+    "type": "module",
+    "private": true,
+    "devDependencies": {
+        "@prettier/plugin-oxc": "catalog:tools",
+        "prettier": "catalog:tools",
+        "prettier-plugin-pkg": "catalog:tools",
+        "prettier-plugin-svelte": "catalog:tools",
+        "prettier-plugin-toml": "catalog:tools"
+    }
+}

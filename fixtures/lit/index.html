@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lit Component Library</title>
+        <style>
+            body {
+                padding: 2rem;
+                font-family: system-ui, sans-serif;
+            }
+            .button-group {
+                display: flex;
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Lit Component Library</h1>
+        <div class="button-group">
+            <app-button variant="primary">Primary Button</app-button>
+            <app-button variant="secondary">Secondary Button</app-button>
+        </div>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>

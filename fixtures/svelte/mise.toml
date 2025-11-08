@@ -1,0 +1,7 @@
+[tasks.dev]
+description = "Start Vite dev server for Svelte fixture"
+run = "vite"
+
+[tasks.build]
+description = "Build Svelte component library"
+run = "vite build"

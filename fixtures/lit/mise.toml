@@ -1,0 +1,7 @@
+[tasks.dev]
+description = "Start Vite dev server for Lit fixture"
+run = "vite"
+
+[tasks.build]
+description = "Build Lit component library"
+run = "vite build"

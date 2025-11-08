@@ -1,0 +1,7 @@
+[tasks.dev]
+description = "Start Vite dev server for Preact fixture"
+run = "vite"
+
+[tasks.build]
+description = "Build Preact component library"
+run = "vite build"

@@ -1,0 +1,25 @@
+{
+    "name": "@fixtures/solid",
+    "version": "0.0.0",
+    "type": "module",
+    "private": true,
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/esm/index.js",
+            "require": "./dist/cjs/index.cjs"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "solid-js": "catalog:framework",
+        "vite": "catalog:tools",
+        "vite-plugin-component-lib": "workspace:*",
+        "vite-plugin-solid": "catalog:plugins"
+    }
+}

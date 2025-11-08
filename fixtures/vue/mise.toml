@@ -1,0 +1,7 @@
+[tasks.dev]
+description = "Start Vite dev server for Vue fixture"
+run = "vite"
+
+[tasks.build]
+description = "Build Vue component library"
+run = "vite build"

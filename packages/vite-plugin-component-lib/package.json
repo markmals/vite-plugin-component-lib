@@ -1,0 +1,43 @@
+{
+    "name": "vite-plugin-component-lib",
+    "version": "0.1.0",
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "keywords": [
+        "vite-plugin",
+        "react-component-library",
+        "preact-component-library",
+        "vue-component-library",
+        "svelte-component-library",
+        "solid-component-library",
+        "lit-component-library",
+        "qwik-component-library",
+        "angular-component-library"
+    ],
+    "peerDependencies": {
+        "vite": "catalog:tools"
+    },
+    "dependencies": {
+        "unplugin-dts": "catalog:plugins"
+    },
+    "devDependencies": {
+        "@prettier/plugin-oxc": "catalog:tools",
+        "@typescript/native-preview": "catalog:tools",
+        "prettier": "catalog:tools",
+        "prettier-plugin-pkg": "catalog:tools",
+        "prettier-plugin-svelte": "catalog:tools",
+        "prettier-plugin-toml": "catalog:tools",
+        "tsdown": "catalog:dev",
+        "vite": "catalog:tools"
+    }
+}

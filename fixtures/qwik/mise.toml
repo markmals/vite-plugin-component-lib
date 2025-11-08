@@ -1,0 +1,7 @@
+[tasks.dev]
+description = "Start Vite dev server for Qwik fixture"
+run = "vite"
+
+[tasks.build]
+description = "Build Qwik component library"
+run = "rm -rf dist && vite build --mode lib && rm -rf lib"
